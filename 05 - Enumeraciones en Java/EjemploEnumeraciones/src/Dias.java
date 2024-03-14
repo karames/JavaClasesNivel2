@@ -1,5 +1,3 @@
-package ejemploenumeraciones;
-
 public enum Dias {
     LUNES,
     MARTES,

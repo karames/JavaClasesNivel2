@@ -1,5 +1,3 @@
-package ejemploenumeraciones;
-
 public enum Continentes {
     AFRICA(53),
     EUROPA(46),

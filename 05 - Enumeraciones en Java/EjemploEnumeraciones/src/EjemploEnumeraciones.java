@@ -1,5 +1,8 @@
-package ejemploenumeraciones;
-
+/**
+ * Ejemplo uso enumeraciones en Java
+ *
+ * @author Nono Karames
+ */
 public class EjemploEnumeraciones {
     public static void main(String[] args) throws Exception {
         // Utilizar enumeración Dias
