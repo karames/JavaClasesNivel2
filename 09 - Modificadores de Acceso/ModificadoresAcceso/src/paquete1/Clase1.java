@@ -9,39 +9,39 @@ public class Clase1 {
 
     // Constructores
     public Clase1() {
-        System.out.println("Constructor público vacío");
+        System.out.println("Constructor público Clase1 vacío");
     }
 
     public Clase1(int i) {
-        System.out.println("Constructor público con 1 parámetro");
+        System.out.println("Constructor público Clase1 con 1 parámetro");
     }
 
     protected Clase1(int i, int j) {
-        System.out.println("Constructor protegido");
+        System.out.println("Constructor protegido Clase1 con 2 parámetros");
     }
 
     Clase1(int i, int j, int k) {
-        System.out.println("Constructor paquete");
+        System.out.println("Constructor paquete Clase1 con 3 parámetros");
     }
 
     private Clase1(int i, int j, int k, int l) {
-        System.out.println("Constructor privado");
+        System.out.println("Constructor privado Clase1 con 4 parámetros");
     }
 
     // Definición de métodos
     public String metodoPublico() {
-        return "Método publico";
+        return "Método público Clase1";
     }
 
     protected String metodoProtegido() {
-        return "Método protegido";
+        return "Método protegido Clase1";
     }
 
     String metodoPaquete() {
-        return "Método paquete";
+        return "Método paquete Clase1";
     }
 
     private String metodoPrivado() {
-        return "Método privado";
+        return "Método privado Clase1";
     }
 }
