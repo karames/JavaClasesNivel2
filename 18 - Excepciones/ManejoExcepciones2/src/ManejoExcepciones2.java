@@ -1,3 +1,8 @@
+/**
+ * Manejo de Excepciones
+ *
+ * @author Nono Karames
+ */
 public class ManejoExcepciones2 {
 
     public static void main(String[] args) {
@@ -18,27 +23,27 @@ public class ManejoExcepciones2 {
             try {
                 datos.listar();
             }
-            // Si se van a procesar varias excepciones de la misma jerarquia
-            // siempre se debe procesar primero la excepcion de menor jerarquia
-            // y posteriormente la de mayor jerarquia
+            // Si se van a procesar varias excepciones de la misma jerarquía
+            // siempre se debe procesar primero la excepción de menor jerarquía
+            // y posteriormente la de mayor jerarquía
             catch (LecturaDatosEx ex) {
-                System.out.println("Error lectura: Procesa la excepcion mas especifica de lectura de datos");
+                System.out.println("Error lectura: Procesa la excepción mas especifica de lectura de datos");
             } catch (AccesoDatosEx ex) {
-                System.out.println("Error Acceso datos: Procesa la excepcion mas generica de acceso a datos");
+                System.out.println("Error Acceso datos: Procesa la excepción mas genérica de acceso a datos");
             } catch (Exception ex) {
                 System.out.println("Error general");
             } finally {
-                System.out
-                        .println("Procesar finally es opcional, siempre se ejecutara sin importar si hubo error o no");
+                System.out.println(
+                        "Procesar finally es opcional, siempre se ejecutara sin importar si hubo error o no");
             }
         } else if ("insertar".equals(accion)) {
             try {
                 datos.insertar();
             } catch (AccesoDatosEx ex) {
-                System.out.println("Error acceso datos: Podemos procesar solo la excepcion mas generica");
+                System.out.println("Error acceso datos: Podemos procesar solo la excepción mas genérica");
             } finally {
-                System.out
-                        .println("Procesar finally es opcional, siempre se ejecutara sin importar si hubo error o no");
+                System.out.println(
+                        "Procesar finally es opcional, siempre se ejecutara sin importar si hubo error o no");
             }
         } else
             System.out.println("No se proporciono ninguna accion conocida");

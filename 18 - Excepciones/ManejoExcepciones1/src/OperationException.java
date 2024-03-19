@@ -1,3 +1,6 @@
+/**
+ * Excepción personalizada
+ */
 public class OperationException extends Exception {
     // Constructor
     public OperationException(String mensaje) {

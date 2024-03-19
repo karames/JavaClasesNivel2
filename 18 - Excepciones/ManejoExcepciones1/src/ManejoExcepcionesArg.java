@@ -1,3 +1,8 @@
+/**
+ * Manejo excepciones con main utilizando args
+ *
+ * @author Nono Karames
+ */
 public class ManejoExcepcionesArg {
     public static void main(String[] args) throws OperationException {
         try {

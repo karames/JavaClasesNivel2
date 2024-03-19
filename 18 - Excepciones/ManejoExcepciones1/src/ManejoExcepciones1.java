@@ -1,3 +1,8 @@
+/**
+ * Manejo de excepciones main sin utilizar args
+ *
+ * @author Nono Karames
+ */
 public class ManejoExcepciones1 {
     public static void main(String[] args) {
         try {
