@@ -18,6 +18,7 @@ public class EjemploEntradaDatos {
             captura = bInput.readLine();
             while (captura != null) {
                 System.out.println("Dato introducido: " + captura);
+                System.out.println("");
                 System.out.print("Introduce un dato: ");
                 captura = bInput.readLine();
             }
