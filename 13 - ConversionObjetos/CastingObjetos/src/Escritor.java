@@ -3,7 +3,7 @@ public class Escritor extends Empleado {
     private final TipoEscritura tipoEscritura;
 
     // Constructor
-    protected Escritor(String nombre, double sueldo, TipoEscritura tipoEscritura) {
+    public Escritor(String nombre, double sueldo, TipoEscritura tipoEscritura) {
         super(nombre, sueldo);
         this.tipoEscritura = tipoEscritura;
     }
@@ -15,5 +15,11 @@ public class Escritor extends Empleado {
 
     public String getTipoDeEscrituraEnTexto() {
         return tipoEscritura.getDescripcion();
+    }
+
+    @Override
+    public String obtenerDetalles() {
+        return super.obtenerDetalles() + "\n" +
+                "Tipo de escritura: " + tipoEscritura.getDescripcion();
     }
 }

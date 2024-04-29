@@ -14,7 +14,7 @@ public class ClaseObject {
     }
 
     private static void compararObjetos(Empleado empleado1, Empleado empleado2) {
-        System.out.println("Contenido objeto 1: " + empleado1);
+        System.out.println("\nContenido objeto 1: " + empleado1);
         System.out.println("Contenido objeto 2: " + empleado2);
 
         // Revisión por referencia
@@ -40,5 +40,4 @@ public class ClaseObject {
             System.out.println("Código hash objeto 2: " + empleado2.hashCode());
         }
     }
-
 }

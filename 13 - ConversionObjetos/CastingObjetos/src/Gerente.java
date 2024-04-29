@@ -3,7 +3,7 @@ public class Gerente extends Empleado {
     private String departamento;
 
     // Constructor
-    protected Gerente(String nombre, double sueldo, String departamento) {
+    public Gerente(String nombre, double sueldo, String departamento) {
         super(nombre, sueldo);
         this.departamento = departamento;
     }
