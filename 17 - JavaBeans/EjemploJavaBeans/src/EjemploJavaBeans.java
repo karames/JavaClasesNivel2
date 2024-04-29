@@ -1,3 +1,5 @@
+import beans.PersonaBean;
+
 /**
  * Ejemplo uso JavaBeans
  * Definición de clases con unos requisitos concretos
@@ -6,11 +8,12 @@
  */
 public class EjemploJavaBeans {
     public static void main(String[] args) throws Exception {
-        PersonaBean persona = new PersonaBean();
-        persona.setNombre("Juan");
-        persona.setEdad(29);
+        PersonaBean personaBean = new PersonaBean();
+        personaBean.setNombre("Juan");
+        personaBean.setEdad(29);
 
-        System.out.println("Nombre: " + persona.getNombre());
-        System.out.println("Edad: " + persona.getEdad());
+        System.out.println("");
+        System.out.println("Nombre: " + personaBean.getNombre());
+        System.out.println("Edad: " + personaBean.getEdad());
     }
 }

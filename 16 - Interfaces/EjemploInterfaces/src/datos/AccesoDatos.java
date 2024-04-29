@@ -1,4 +1,4 @@
-package domain.datos;
+package datos;
 
 public interface AccesoDatos {
     // Atributos

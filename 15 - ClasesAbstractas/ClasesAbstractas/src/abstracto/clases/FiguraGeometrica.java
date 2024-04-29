@@ -1,4 +1,4 @@
-package domain.abstracto;
+package abstracto.clases;
 
 public abstract class FiguraGeometrica {
     // Atributos
@@ -11,7 +11,7 @@ public abstract class FiguraGeometrica {
 
     // Definición de métodos
     public String getTipoFigura() {
-        return tipoFigura;
+        return this.tipoFigura;
     }
 
     public void setTipoFigura(String tipoFigura) {
@@ -19,10 +19,11 @@ public abstract class FiguraGeometrica {
     }
 
     // La clase padre no define comportamientos, la clase hija los implementa
+    // Sólo firma del método
     public abstract void dibujar();
 
     @Override
     public String toString() {
-        return "FiguraGeometrica [tipoFigura=" + tipoFigura + "]";
+        return "FiguraGeometrica [tipoFigura=" + this.tipoFigura + "]";
     }
 }

@@ -1,8 +1,8 @@
-package domain.abstracto;
+package abstracto.clases;
 
-public class Circulo extends FiguraGeometrica {
+public class Triangulo extends FiguraGeometrica {
     // Constructor
-    public Circulo(String tipoFigura) {
+    public Triangulo(String tipoFigura) {
         super(tipoFigura);
     }
 

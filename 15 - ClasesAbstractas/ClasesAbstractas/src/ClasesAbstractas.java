@@ -1,7 +1,7 @@
-import domain.abstracto.FiguraGeometrica;
-import domain.abstracto.Rectangulo;
-import domain.abstracto.Triangulo;
-import domain.abstracto.Circulo;
+import abstracto.clases.Circulo;
+import abstracto.clases.FiguraGeometrica;
+import abstracto.clases.Rectangulo;
+import abstracto.clases.Triangulo;
 
 /**
  * Ejemplo de uso clases abstractas
@@ -14,6 +14,7 @@ public class ClasesAbstractas {
         FiguraGeometrica triangulo = new Triangulo("Triángulo");
         FiguraGeometrica circulo = new Circulo("Círculo");
 
+        System.out.println("");
         System.out.println(rectangulo);
         rectangulo.dibujar();
 

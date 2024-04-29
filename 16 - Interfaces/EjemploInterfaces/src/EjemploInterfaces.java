@@ -1,6 +1,6 @@
-import domain.datos.AccesoDatos;
-import domain.datos.ImplementacionMySql;
-import domain.datos.ImplementacionOracle;
+import datos.AccesoDatos;
+import datos.ImplementacionMySql;
+import datos.ImplementacionOracle;
 
 /**
  * Ejemplo uso Interfaces
@@ -9,19 +9,19 @@ import domain.datos.ImplementacionOracle;
  */
 public class EjemploInterfaces {
     public static void main(String[] args) throws Exception {
-        AccesoDatos datos = new ImplementacionOracle();
-        ejecutar(datos, "listar");
+        AccesoDatos datos1 = new ImplementacionOracle();
+        ejecutar(datos1, "Listar");
 
         AccesoDatos datos2 = new ImplementacionMySql();
-        ejecutar(datos2, "insertar");
+        ejecutar(datos2, "Insertar");
 
         System.out.println("Máximo registros: " + AccesoDatos.MAX_REGISTROS);
     }
 
-    public static void ejecutar(AccesoDatos datos, String accion) {
-        if ("listar".equals(accion)) {
+    private static void ejecutar(AccesoDatos datos, String accion) {
+        if ("Listar".equals(accion)) {
             datos.listarRegistros();
-        } else if ("insertar".equals(accion)) {
+        } else if ("Insertar".equals(accion)) {
             datos.insertarRegistros();
         }
     }

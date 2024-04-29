@@ -1,15 +1,16 @@
+package beans;
+
 import java.io.Serializable;
 
 /**
  * JavaBean: Modelo de componentes desarrollo por Sun Microsystems
  * Requisitos:
- * Implementa Serializable
  * Las propiedades tienen que ser private
- * Constructor público vacío
- * Por cada propiedad su correspondiente set y/o get (si es necesario)
- * Serializable:
- * Permite que los objetos sean serializables en disco o red
- * No tiene ningún método
+ * Constructor público vacío obligatorio (puede tener otros)
+ * Por cada propiedad su correspondiente set, get, is (si es necesario)
+ * Implementa java.io.Serializable:
+ * Permite que los objetos sean serializables (convertirlo en 1 y 0)
+ * No tiene ningún método (no es obligatorio implementar nada)
  */
 public class PersonaBean implements Serializable {
     // Atributos: requisito private
@@ -28,7 +29,7 @@ public class PersonaBean implements Serializable {
 
     // Por cada propiedad un get y/o set (cuando sea necesario)
     public String getNombre() {
-        return nombre;
+        return this.nombre;
     }
 
     public void setNombre(String nombre) {
@@ -36,7 +37,7 @@ public class PersonaBean implements Serializable {
     }
 
     public int getEdad() {
-        return edad;
+        return this.edad;
     }
 
     public void setEdad(int edad) {
