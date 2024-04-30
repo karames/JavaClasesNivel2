@@ -19,6 +19,7 @@ public class Division {
     }
 
     public void visualizarOperacion() {
+        System.out.println("");
         System.out.println("El resultado de la división es: " + numerador / denominador);
     }
 }
