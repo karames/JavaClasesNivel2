@@ -22,7 +22,7 @@
       "name": "ManejoExcepcionesArg",
       "request": "launch",
       "mainClass": "ManejoExcepcionesArg",
-      "args": "10 2",
+      "args": "10 0",
       "projectName": "ManejoExcepciones1_f6e52405"
     }
   ]

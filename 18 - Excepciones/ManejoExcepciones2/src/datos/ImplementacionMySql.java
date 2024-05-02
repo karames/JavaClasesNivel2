@@ -1,3 +1,9 @@
+package datos;
+
+import excepciones.AccesoDatosEx;
+import excepciones.EscrituraDatosEx;
+import excepciones.LecturaDatosEx;
+
 public class ImplementacionMySql implements AccesoDatos {
 
     private boolean simularError;

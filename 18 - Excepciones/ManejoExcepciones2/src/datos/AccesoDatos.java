@@ -1,3 +1,7 @@
+package datos;
+
+import excepciones.AccesoDatosEx;
+
 public interface AccesoDatos {
     public abstract void insertar() throws AccesoDatosEx;
 

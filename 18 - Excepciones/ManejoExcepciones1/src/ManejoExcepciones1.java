@@ -12,6 +12,8 @@ public class ManejoExcepciones1 {
             System.out.println("");
             System.out.println("Ocurrió un error!!!");
             oe.printStackTrace();
+        } finally {
+            System.out.println("Se terminaron de revisar las excepciones");
         }
     }
 }

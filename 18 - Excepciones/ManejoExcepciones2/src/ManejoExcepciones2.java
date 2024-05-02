@@ -1,3 +1,8 @@
+import datos.AccesoDatos;
+import datos.ImplementacionMySql;
+import excepciones.AccesoDatosEx;
+import excepciones.LecturaDatosEx;
+
 /**
  * Manejo de Excepciones
  *
